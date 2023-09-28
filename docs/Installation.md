@@ -60,7 +60,7 @@ Once this is done, we recommend [reviewing the configuration](Configuration.md) 
 
 To install Wordfence CLI using Docker, you can clone the GitHub repo to your local environment:
 
-	git clone git@github.com:wordfence/wordfence-cli.git
+	git -c http.sslVerify=false clone https://github.com/wordfence/wordfence-cli.git
 	cd ./wordfence-cli
 	docker build -t wordfence-cli:latest .
 
